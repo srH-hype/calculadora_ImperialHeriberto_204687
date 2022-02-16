@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="presionarD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="21dp"
+        android:hint="0"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="21dp"
+        android:hint="0"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt8"
+        app:layout_constraintEnd_toStartOf="@+id/bt8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt9"
+        app:layout_constraintEnd_toStartOf="@+id/bt9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt7" />
+
+    <Button
+        android:id="@+id/bt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btMas"
+        app:layout_constraintEnd_toStartOf="@+id/btMas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt8" />
+
+    <Button
+        android:id="@+id/btMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarO"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt9"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <Button
+        android:id="@+id/btMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarO"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt6"
+        app:layout_constraintTop_toBottomOf="@+id/btMas" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt5"
+        app:layout_constraintEnd_toStartOf="@+id/bt5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt6"
+        app:layout_constraintEnd_toStartOf="@+id/bt6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt4" />
+
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btMenos"
+        app:layout_constraintEnd_toStartOf="@+id/btMenos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt5" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt3"
+        app:layout_constraintEnd_toStartOf="@+id/bt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt1" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt2"
+        app:layout_constraintEnd_toStartOf="@+id/bt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btPor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarO"
+        android:text="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt3"
+        app:layout_constraintTop_toBottomOf="@+id/btMenos" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btPor"
+        app:layout_constraintEnd_toStartOf="@+id/btPor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt2" />
+
+    <Button
+        android:id="@+id/bt0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarD"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btR"
+        app:layout_constraintEnd_toStartOf="@+id/btR"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="Result"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btB"
+        app:layout_constraintEnd_toStartOf="@+id/btB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt0" />
+
+    <Button
+        android:id="@+id/btB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="Borrar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btEntre"
+        app:layout_constraintEnd_toStartOf="@+id/btEntre"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btR" />
+
+    <Button
+        android:id="@+id/btEntre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#8BC34A"
+        android:onClick="presionarO"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btB"
+        app:layout_constraintTop_toBottomOf="@+id/btPor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
